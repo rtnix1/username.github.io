@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiHive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WikiHive</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#blog">وبلاگ</a></li>
+                <li><a href="#encyclopedia">دانشنامه</a></li>
+                <li><a href="#register">ثبت نام</a></li>
+                <li><a href="#upload">آپلود</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>خوش آمدید</h2>
+        <p>به WikiHive خوش آمدید! در اینجا می‌توانید مقالات خود را به اشتراک بگذارید و از وبلاگ‌ها و دانشنامه‌های دیگران بهره ببرید.</p>
+        <p>این سایت در تلاش برای به اشتراک‌گذاری علم با یکدیگر است.</p>
+        
+        <section id="blog">
+            <h2>وبلاگ</h2>
+            <form id="blogForm">
+                <label for="blogTitle">عنوان:</label>
+                <input type="text" id="blogTitle" name="blogTitle" required>
+                <label for="blogContent">محتوا:</label>
+                <textarea id="blogContent" name="blogContent" rows="4" required></textarea>
+                <label for="blogImage">آپلود عکس:</label>
+                <input type="file" id="blogImage" name="blogImage" accept="image/*">
+                <button type="submit">انتشار</button>
+            </form>
+        </section>
+
+        <section id="encyclopedia">
+            <h2>دانشنامه</h2>
+            <form id="encyclopediaForm">
+                <label for="encyclopediaTitle">عنوان:</label>
+                <input type="text" id="encyclopediaTitle" name="encyclopediaTitle" required>
+                <label for="encyclopediaContent">محتوا:</label>
+                <textarea id="encyclopediaContent" name="encyclopediaContent" rows="4" required></textarea>
+                <label for="encyclopediaImage">آپلود عکس:</label>
+                <input type="file" id="encyclopediaImage" name="encyclopediaImage" accept="image/*">
+                <button type="submit">انتشار</button>
+            </form>
+        </section>
+    </section>
+
+    <section id="register">
+        <h2>ثبت نام</h2>
+        <form id="registerForm">
+            <label for="username">نام کاربری:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">رمز عبور:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">ثبت نام</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>ورود</h2>
+        <form id="loginForm">
+            <label for="username">نام کاربری:</label>
+            <input type="text" id="usernameLogin" name="username" required>
+            <label for="password">رمز عبور:</label>
+            <input type="password" id="passwordLogin" name="password" required>
+            <button type="submit">ورود</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <form id="contactForm">
+            <label for="phone">شماره تماس:</label>
+            <input type="text" id="phone" name="phone">
+            <button type="submit">ذخیره شماره</button>
+        </form>
+        <p>شماره تماس فعلی: <span id="currentPhone">-</span></p>
+        <button id="editPhone">تغییر شماره تماس</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WikiHive. تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
